@@ -4,5 +4,28 @@ Links:
     sdsclub.com/artificial-intelligence-a-z-learn-how-to-build-an-ai
 
 Reinforcement Learning:
-    i. Plan of Attack:
-        
+i. Plan of Attack:
+ii. Belman equation - State --> s - Action --> a - Reward --> R - Disount --> Y
+
+            PAPER: Theory oof Dynamic equation, RICHARD BELLMAN
+
+            equation : V(s) = max (R(s,a) + YV(s`))
+
+    iii. Markov decision process
+        Types
+        i. Deterministic Search ( no randomness)
+        ii. Non-Deterministic Search ( includes randomness)
+
+            Markov Process
+                A stochastic( random distribution) process has the markov property if the conditional probability distribution of future states of the process ( conditional on bot past and present states ) depends only upon the present state, not on the sequence of events that preceded it. A process with this property is called a Markov process.
+
+            Markov Decision Process
+                provides a mathematical framework for modelling decision making insituations where outcomes are partly random and partly under the control of a decision maker.
+
+                V(s) = max (R(s,a) + yΕP(s,a,s`)V(s`))
+
+    iv. Q-learning Intuition
+
+       - Quality of the actions --> Q(s, a)
+       - equation: Q(s, a) = R(s,a) + yΕP(s,a,s`)Q(s`, a`)
+       - Temporal difference: The heart of Q-learning
